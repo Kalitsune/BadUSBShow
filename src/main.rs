@@ -1,11 +1,11 @@
+// On Windows platform, don't show a console when opening the app.
+#![windows_subsystem = "windows"]
 use druid::widget::Label;
 use druid::{AppLauncher, Widget, WindowDesc, Data, Env};
 use std::string::String;
 use std::thread;
 use core::time::Duration;
 
-// On Windows platform, don't show a console when opening the app.
-#[windows_subsystem = "windows"]
 
 #[derive(Clone, Data)]
 struct AppData {
